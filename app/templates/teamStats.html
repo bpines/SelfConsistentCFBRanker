@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<div class="row" style="margin-bottom:15px">
+    <div class="col-md-4">
+        <form action="" method="POST" novalidate>
+            {{form.myField(class="form-control", **{"onchange": "this.form.submit()"})|safe}}
+        </form>
+    </div>
+</div>
+<div class = "row">
+    <div class="col-lg-8 md-12">
+        <div>
+            <h3>{{data.team}}</h3>
+            <p>{{data.wording}}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

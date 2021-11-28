@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<div class="row">
+    <div class="col-lg-6 md-12">
+        <h2>Week {{week}} Self Consistent NCAAFB Rankings</h2>
+        <p>Hi I'm Max and these are my rankings</p>
+    </div>
+</div>
+<div class = "row">
+    <div class="col-lg-12">
+        <div>
+            {{ table |safe }}
+        </div>
+    </div>
+</div>
+{% endblock %}
